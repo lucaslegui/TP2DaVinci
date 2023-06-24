@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>CyberGear - Productos informáticos</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar container">
+            <img src="assets/logo.png" class="logo" alt="Logo CyberGear" />
+            <ul>
+                <li class="links"><a href="#">Computadoras</a></li>
+                <li class="links"><a href="#">Teclados</a></li>
+                <li class="links"><a href="#">Mouse</a></li>
+            </ul>
+            <div class="carrito">
+                <img src="assets/carrito_vacio.svg" alt="Carrito vacio" />
+            </div>
+        </nav>
+
+        <div class="hero">
+            <div class="contenido-hero">
+                <h2>Todo el Harware en un solo lugar.</h2>
+                <form action="#" id="busqueda" method="post" class="formulario">
+                    <input class="buscador" type="text" placeholder="¿Que producto buscás?" id="buscador" />
+                    <input type="submit" id="submit-buscador" class="submit-buscador" value="Buscar" />
+                </form>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="productos">
+            <div class="titulo">
+                <h1>Productos informáticos</h1>
+            </div>
+            <div class="categorias container">
+                <div class="computadoras">
+                    <h3>Computadoras</h3>
+                    <button type="button" class="boton" id="boton-computadoras">Mostrar</button>
+                    <div id="mostrandoProductos"></div>
+                </div>
+                <div class="Teclados">
+                    <h3>Teclados</h3>
+                    <button type="button" class="boton" id="boton-teclados">Mostrar</button>
+                </div>
+                <div class="Mouse">
+                    <h3>Mouse</h3>
+                    <button type="button" class="boton" id="boton-mouse">Mostrar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="col-1">
+                <img src="" alt="logo robot marca">
+                <p>direccion</p>
+                <p>telefono</p>
+            </div>
+            <div class="col-2">
+                <a class="enlace" href="#">¿Quienes Somos?</a>
+                <a class="enlace" href="#">Empleo</a>
+                <a class="enlace" href="#">Blog</a>
+            </div>
+            <div class="col-3">
+                <h4>¡Seguinos en nuestras redes!</h4>
+                <a href=""><img src="" alt="logo instagram"></a>
+                <a href=""><img src="" alt="logo facebook"></a>
+                <a href=""><img src="" alt="logo twitter"></a>
+                <a href=""><img src="" alt="logo whatsapp"></a>
+                <a href=""><img src="" alt="logo linkedin"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>

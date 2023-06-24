@@ -1,0 +1,16 @@
+crear un array de objetos por cada categoria.
+Los datos de cada objeto se muestran desde el array.
+
+cada producto tiene una imagen y un titulo, mediante un boton "mostrar detalles" se muestran los datos cargados en el array de objetos.
+
+div class="card">
+                    <img src="" alt="">
+                    <div class="info-card">
+                        <h4>Nombre del producto</h4>
+                        <p class="descripcion"></p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$200.000.- <span class="real">$120.000.-</span></p>
+                        <a href="#" class="agregar-carrito" data-id="2">Agregar Al Carrito</a>
+                    </div>
+
+                    

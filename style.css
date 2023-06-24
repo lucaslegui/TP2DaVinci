@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 0;
+  overflow: hidden;
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.carrito img {
+  width: 60px;
+  height: auto;
+}
+
+.carrito {
+  border: 1px solid black;
+  padding: 5px 5px 5px 5px;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar li {
+  margin-right: 50px;
+}
+
+/* HERO */
+.hero {
+  background-image: url(assets/header.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h2 {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.hero .formulario{ 
+    width: 100%;
+    max-width: 500px;
+    background-color: rgba(255, 255, 255, 0.738);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.hero .formulario{
+    display: flex;
+    margin-top: 60px;
+}
+
+.hero .formulario input{
+    margin: 0 10px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+} 
+
+.hero .formulario input[type="submit"]{
+    background-color: #ff2e63;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.hero .formulario input[type="submit"]:hover{
+    background-color: #ff2e63;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all .3s ease;
+    transform: scale(1.1);
+}
+/* FIN HERO */
+
+/* main */
+main {
+  margin-top: 60px;
+}
+
+.titulo{
+  text-align: center;
+}
+
+.boton{
+  background-color: #ff2e63;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all .3s ease;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.activo{
+  background-color: #2e5fff;
+}
+
+.ocultar{
+  display: none;
+}
+
+.card{
+  
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+}
