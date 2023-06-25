@@ -19,7 +19,21 @@
                 <li class="links"><a href="#">Mouse</a></li>
             </ul>
             <div class="carrito">
-                <img src="assets/carrito_vacio.svg" alt="Carrito vacio" />
+                <img src="assets/carrito_vacio.svg" alt="Carrito vacio" class="carrito-img" />
+                <div id="carrito-modal">
+                    <table id="lista-carrito">
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Precio</th>
+                                <th>Cantidad</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                    <a href="#" id="vaciar-carrito" class="btn-vaciar">Vaciar Carrito</a>
+                </div>
             </div>
         </nav>
 
@@ -42,15 +56,17 @@
                 <div class="computadoras">
                     <h3>Computadoras</h3>
                     <button type="button" class="boton" id="boton-computadoras">Mostrar</button>
-                    <div id="mostrandoProductos"></div>
+                    <div id="mostrandoComputadoras"></div>
                 </div>
                 <div class="Teclados">
                     <h3>Teclados</h3>
                     <button type="button" class="boton" id="boton-teclados">Mostrar</button>
+                    <div id="mostrandoTeclados"></div>
                 </div>
                 <div class="Mouse">
                     <h3>Mouse</h3>
                     <button type="button" class="boton" id="boton-mouse">Mostrar</button>
+                    <div id="mostrandoMouse"></div>
                 </div>
             </div>
         </section>

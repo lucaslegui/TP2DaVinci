@@ -13,4 +13,4 @@ div class="card">
                         <a href="#" class="agregar-carrito" data-id="2">Agregar Al Carrito</a>
                     </div>
 
-                    
+ver el tema del total con decimales.
