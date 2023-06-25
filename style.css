@@ -144,14 +144,29 @@ main {
   display: none;
 }
 
-.card{
-  
-  width: 100%;
-  max-width: 300px;
-  margin: 0 auto;
-  margin-bottom: 30px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 10px;
-  text-align: center;
+/* alinear cards con grid */
+#mostrandoProductos{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
 }
+
+/* cards */
+.card{
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 5px;
+  transition: all .3s ease;
+}
+.card img{
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.card:hover{
+  background-color: blue;
+  color: white;
+}
+
+
