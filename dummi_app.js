@@ -1,6 +1,6 @@
 //array de objetos que continen los productos
 const computadoras = [
-    { nombre: 'PC Escritorio Intel', imagen: 'assets/computadora1.webp', detalles: 'CPU I3 3200Mhz – 8GB DDR3 – SSD 240GB – Sistema Operativo Windows 11', estrellas: 'assets/estrellas.png', precio: 129.999, stock: 120 },
+    { nombre: 'PC Escritorio Intel', imagen: 'assets/computadora1.webp', detalles: 'CPU I3 3200Mhz – 8GB DDR3 – SSD 240GB – Sistema Operativo Windows 11', estrellas: 'assets/estrellas.png', precio: 129999, stock: 120 },
     { nombre: 'PC Escritorio Advanced', imagen: 'assets/computadora1.webp', detalles: 'CPU I5 9600K – 8GB DDR3 – SSD 240GB – Sistema Operativo Windows 11', estrellas: 'assets/estrellas.png', precio: 158394, stock: 90 },
     { nombre: 'PC Escritorio Expert', imagen: 'assets/computadora1.webp', detalles: 'CPU I5 11600K – 16GB DDR3 – SSD 240GB – Sistema Operativo Windows 11', estrellas: 'assets/estrellas.png', precio: 174299, stock: 97 },
     { nombre: 'PC Gamer Intel', imagen: 'assets/computadora1.webp', detalles: 'CPU I7 11Gen – 8GB DDR4 – SSD 240GB – Sistema Operativo Windows 11', estrellas: 'assets/estrellas.png', precio: 199998, stock: 45 },
@@ -9,16 +9,16 @@ const computadoras = [
 ];
 
 const teclados = [
-    { nombre: 'Teclado T-dagger', imagen: 'assets/teclado1.webp', detalles: 'Teclado Mecanico 60% Gamer Edicion Arena RGB - Color rosa', estrellas: 'assets/estrellas.png', precio: 13.999, stock: 250 },
-    { nombre: 'Teclado Hyperx', imagen: 'assets/teclado1.webp', detalles: 'Teclado Mecanico 60% Gamer Edicion Arena RGB - Color rosa', estrellas: 'assets/estrellas.png', precio: 13.999, stock: 250 },
-    { nombre: 'Teclado HyperX Max', imagen: 'assets/teclado1.webp', detalles: 'Teclado Mecanico 60% Gamer Edicion Arena RGB - Color rosa', estrellas: 'assets/estrellas.png', precio: 13.999, stock: 250 },
-    { nombre: 'Teclado Logitech', imagen: 'assets/teclado1.webp', detalles: 'Teclado Mecanico 60% Gamer Edicion Arena RGB - Color rosa', estrellas: 'assets/estrellas.png', precio: 13.999, stock: 250 },
-    { nombre: 'Teclado Microsoft', imagen: 'assets/teclado1.webp', detalles: 'Teclado Mecanico 60% Gamer Edicion Arena RGB - Color rosa', estrellas: 'assets/estrellas.png', precio: 13.999, stock: 250 },
-    { nombre: 'Teclado Redragon', imagen: 'assets/teclado1.webp', detalles: 'Teclado Mecanico 60% Gamer Edicion Arena RGB - Color rosa', estrellas: 'assets/estrellas.png', precio: 13.999, stock: 250 }
+    { nombre: 'Teclado T-dagger', imagen: 'assets/teclado1.webp', detalles: 'Teclado Mecanico 60% Gamer Edicion Arena RGB - Color rosa', estrellas: 'assets/estrellas.png', precio: 13999, stock: 250 },
+    { nombre: 'Teclado Hyperx', imagen: 'assets/teclado1.webp', detalles: 'Teclado Mecanico 60% Gamer Edicion Arena RGB - Color rosa', estrellas: 'assets/estrellas.png', precio: 13999, stock: 250 },
+    { nombre: 'Teclado HyperX Max', imagen: 'assets/teclado1.webp', detalles: 'Teclado Mecanico 60% Gamer Edicion Arena RGB - Color rosa', estrellas: 'assets/estrellas.png', precio: 13999, stock: 250 },
+    { nombre: 'Teclado Logitech', imagen: 'assets/teclado1.webp', detalles: 'Teclado Mecanico 60% Gamer Edicion Arena RGB - Color rosa', estrellas: 'assets/estrellas.png', precio: 13999, stock: 250 },
+    { nombre: 'Teclado Microsoft', imagen: 'assets/teclado1.webp', detalles: 'Teclado Mecanico 60% Gamer Edicion Arena RGB - Color rosa', estrellas: 'assets/estrellas.png', precio: 13999, stock: 250 },
+    { nombre: 'Teclado Redragon', imagen: 'assets/teclado1.webp', detalles: 'Teclado Mecanico 60% Gamer Edicion Arena RGB - Color rosa', estrellas: 'assets/estrellas.png', precio: 13.99, stock: 250 }
 ];
 
 const mouse = [
-    { nombre: 'Mouse Logitech Logi', imagen: 'assets/computadora1.webp', detalles: 'CPU I3 3200Mhz – 8GB DDR3 – SSD 240GB – Sistema Operativo Windows 11', estrellas: 'assets/estrellas.png', precio: 129.999, stock: 120 },
+    { nombre: 'Mouse Logitech Logi', imagen: 'assets/computadora1.webp', detalles: 'CPU I3 3200Mhz – 8GB DDR3 – SSD 240GB – Sistema Operativo Windows 11', estrellas: 'assets/estrellas.png', precio: 129999, stock: 120 },
     { nombre: 'Mouse Noganet', imagen: 'assets/computadora1.webp', detalles: 'CPU I5 9600K – 8GB DDR3 – SSD 240GB – Sistema Operativo Windows 11', estrellas: 'assets/estrellas.png', precio: 158394, stock: 90 },
     { nombre: 'Mouse Wibo', imagen: 'assets/computadora1.webp', detalles: 'CPU I5 11600K – 16GB DDR3 – SSD 240GB – Sistema Operativo Windows 11', estrellas: 'assets/estrellas.png', precio: 174299, stock: 97 },
     { nombre: 'Mouse Razer', imagen: 'assets/computadora1.webp', detalles: 'CPU I7 11Gen – 8GB DDR4 – SSD 240GB – Sistema Operativo Windows 11', estrellas: 'assets/estrellas.png', precio: 199998, stock: 45 },
@@ -111,52 +111,76 @@ function mostrarProductos(productos, contenedor) {
     }
 }
 
+
+
 //agregar elementos al carrito
+
 let carrito = [];
-console.log(carrito);
 
-function agregarAlCarrito(producto) {
-    // Si el producto ya está en el carrito, incrementa la cantidad.
-    for (let i = 0; i < carrito.length; i++) {
-        if (carrito[i].nombre === producto.nombre) {
-            carrito[i].cantidad++;
-            return;
-        }
-    }
 
-    // Si el producto no esta en el carrito, agrega un nuevo articulo al carrito.
-    carrito.push({
-        nombre: producto.nombre,
-        precio: producto.precio = parseFloat(producto.precio),
-        cantidad: 1,
-    });
-}
+// detector de eventos
+const detectProducto = document.querySelector('.categorias');
+
+detectProducto.addEventListener("click", function (e) {
+    if (e.target && e.target.classList.contains("btnAgregar")) {
+        
+         const producto = e.target.parentElement
+
+            const productoAgregado = {
+            cantidad: 1,
+            nombre: producto.querySelector('h4').textContent,
+            precio: producto.querySelector('.div-info p:nth-child(3)').textContent,
+            }
+
+            //saber si un producto ya esta en el carrito
+            const productoEnCarrito = carrito.some(producto => producto.nombre === productoAgregado.nombre);
+
+            if (productoEnCarrito) {
+                const productos = carrito.map(producto => {
+                if (producto.nombre === productoAgregado.nombre) {
+                    producto.cantidad++;
+                    return producto;
+                } else {
+                    return producto;
+                }             
+                });
+                carrito = [...productos];
+
+            } else{
+
+            carrito= [...carrito, productoAgregado];}   
+     
+        actualizarCarrito();
+    } 
+});
 
 function actualizarCarrito() {
-    let listaCarrito = document.querySelector("#lista-carrito tbody");
-    listaCarrito.innerHTML = ""; // solo uso innerHTML para borrar el contenido del tbody.
+    const contenedorProductos = document.querySelector("#lista-carrito tbody");
+    contenedorProductos.innerHTML = ""; // solo uso innerHTML para borrar el contenido del tbody.
     let total = 0;
-    for (let i = 0; i < carrito.length; i++) {
+    
+    carrito.forEach(producto => {
+        
         let fila = document.createElement("tr");
 
         let celdaNombre = document.createElement("td");
-        celdaNombre.textContent = carrito[i].nombre;
+        celdaNombre.textContent = producto.nombre;
         fila.appendChild(celdaNombre);
 
         let celdaPrecio = document.createElement("td");
-        celdaPrecio.textContent = carrito[i].precio;
+        celdaPrecio.textContent = producto.precio;
         fila.appendChild(celdaPrecio);
 
         let celdaCantidad = document.createElement("td");
-        celdaCantidad.textContent = carrito[i].cantidad;
+        celdaCantidad.textContent = producto.cantidad;
         fila.appendChild(celdaCantidad);
 
-        listaCarrito.appendChild(fila);
-        // Actualizar el total del precio.
-        total += carrito[i].precio * carrito[i].cantidad;
-    }
+        contenedorProductos.appendChild(fila);
 
-    //total de la compra
+        //sumar el precio total, convertir el string a number
+        total += parseFloat(producto.precio.slice(1)) * producto.cantidad;
+    })
+    //crando el elemento total en el carrito
     let filaTotal = document.createElement("tr");
 
     let celdaTotalTexto = document.createElement("td");
@@ -164,33 +188,15 @@ function actualizarCarrito() {
     filaTotal.appendChild(celdaTotalTexto);
 
     let celdaTotalPrecio = document.createElement("td");
-    celdaTotalPrecio.textContent = "$" + total;
+    celdaTotalPrecio.textContent = '$' + total;
     filaTotal.appendChild(celdaTotalPrecio);
 
-    listaCarrito.appendChild(filaTotal);
+    contenedorProductos.appendChild(filaTotal);
 }
-
-// detector de eventos
-document.addEventListener("click", function (e) {
-    // Verificar si se hizo clic en un botón Agregar al carrito.
-    if (e.target && e.target.classList.contains("btnAgregar")) {
-        // Obtener el producto desde la tarjeta de producto.
-        let card = e.target.parentElement;
-        let producto = {
-            nombre: card.querySelector("h4").textContent,
-            precio: card.querySelector(".div-info p:nth-child(3)").textContent.slice(1), // Remover el signo pesos
-        };
-
-        agregarAlCarrito(producto);
-        actualizarCarrito();
-    }
-});
 
 // vaciar carrito
 
-document.querySelector("#vaciar-carrito").addEventListener("click", function () {
+document.querySelector('#vaciar-carrito').addEventListener('click', function () {
     carrito = []; // vuelve el arrray a default
     actualizarCarrito(); // actualiza el carrito
 });
-
-
