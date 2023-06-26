@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <title>CyberGear - Productos informáticos</title>
 </head>
@@ -14,9 +15,9 @@
         <nav class="navbar container">
             <img src="assets/logo.png" class="logo" alt="Logo CyberGear" />
             <ul>
-                <li class="links"><a href="#">Computadoras</a></li>
-                <li class="links"><a href="#">Teclados</a></li>
-                <li class="links"><a href="#">Mouse</a></li>
+                <li class="links"><a href="#computadoras">Computadoras</a></li> 
+                <li class="links"><a href="#teclados">Teclados</a></li>
+                <li class="links"><a href="#mouse">Mouse</a></li>
             </ul>
             <div class="carrito">
                 <img src="assets/carrito_vacio.svg" alt="Carrito vacio" class="carrito-img" />
@@ -33,6 +34,7 @@
                         <tbody></tbody>
                     </table>
                     <a href="#" id="vaciar-carrito" class="btn-vaciar">Vaciar Carrito</a>
+                    <button id="cerrarCarrito" class="btnCerrar">X Cerrar Carrito</button>
                 </div>
             </div>
         </nav>
@@ -53,19 +55,25 @@
                 <h1>Productos informáticos</h1>
             </div>
             <div class="categorias container">
-                <div class="computadoras">
-                    <h3>Computadoras</h3>
-                    <button type="button" class="boton" id="boton-computadoras">Mostrar</button>
+                <div class="computadoras" id="computadoras">
+                    <div class="banner computadoras">
+                        <h3>Computadoras</h3>
+                        <button type="button" class="boton" id="boton-computadoras">Mostrar</button>
+                    </div>
                     <div id="mostrandoComputadoras"></div>
                 </div>
-                <div class="Teclados">
-                    <h3>Teclados</h3>
-                    <button type="button" class="boton" id="boton-teclados">Mostrar</button>
+                <div class="Teclados" id="teclados">
+                    <div class="banner teclados">
+                        <h3>Teclados</h3>
+                        <button type="button" class="boton" id="boton-teclados">Mostrar</button>
+                    </div>
                     <div id="mostrandoTeclados"></div>
                 </div>
-                <div class="Mouse">
-                    <h3>Mouse</h3>
-                    <button type="button" class="boton" id="boton-mouse">Mostrar</button>
+                <div class="Mouse" id="mouse">
+                    <div class="banner mouse">
+                        <h3>Mouse</h3>
+                        <button type="button" class="boton" id="boton-mouse">Mostrar</button>
+                    </div>
                     <div id="mostrandoMouse"></div>
                 </div>
             </div>
@@ -74,9 +82,9 @@
     <footer>
         <div class="container">
             <div class="col-1">
-                <img src="" alt="logo robot marca">
-                <p>direccion</p>
-                <p>telefono</p>
+                <img src="assets/head.png" alt="logo robot marca">
+                <p>LUCAS LEGUIZAMON</p>
+                <p>Trabajo Practico NRO II | Programación I | DWN2BP</p>
             </div>
             <div class="col-2">
                 <a class="enlace" href="#">¿Quienes Somos?</a>
