@@ -5,12 +5,12 @@ cada producto tiene una imagen y un titulo, mediante un boton "mostrar detalles"
 
 div class="card">
                     <img src="" alt="">
-                    <div class="info-card">
-                        <h4>Nombre del producto</h4>
+                        h4>Nombre del producto</h4>
+                        <div class="info-card">
                         <p class="descripcion"></p>
                         <img src="img/estrellas.png">
-                        <p class="precio">$200.000.- <span class="real">$120.000.-</span></p>
-                        <a href="#" class="agregar-carrito" data-id="2">Agregar Al Carrito</a>
+                        <p class="precio"><span class="real">$120.000.-</span></p>
+                        <a href="#" class="agregar-carrito">Agregar Al Carrito</a>
                     </div>
 
-ver el tema del total con decimales.
+ver el tema del total suma mal.

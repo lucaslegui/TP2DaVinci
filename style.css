@@ -12,6 +12,8 @@ body {
   font-size: 16px;
   color: #333;
   line-height: 1.5;
+  background-image: url(assets/bg.jpg);
+  background-size: auto;
 }
 
 
@@ -93,7 +95,7 @@ h3 {
 }
 
 .navbar .links a {
-  color: #333;
+  color: #e7e7e7;
   font-size: 1.2rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -299,7 +301,7 @@ main {
 
 
 .card {
-  background-color: #f5f5f5;
+  background-color: #ffffff;
   padding: 20px;
   border-radius: 5px;
   transition: all .3s ease;
@@ -383,7 +385,28 @@ main {
   background-position: center;
 }
 
+/* boton eliminar del carrito */
 
+.btnEliminar {
+  background-color: #ff2e63;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all .3s ease;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+
+.btnEliminar:hover {
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  background-color: #ff2e63;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all .3s ease;
+  transform: scale(1.1);
+}
 
 
 /*    FOOTER    */

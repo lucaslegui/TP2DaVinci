@@ -181,7 +181,7 @@ function actualizarCarrito() {
     contenedorProductos.innerHTML = ''; // solo uso innerHTML para borrar el contenido del tbody.
     let total = 0;
     
-    carrito.forEach(producto => {
+    carrito.forEach((producto, index) => {
         
         let fila = document.createElement('tr');
 
@@ -196,6 +196,15 @@ function actualizarCarrito() {
         let celdaCantidad = document.createElement('td');
         celdaCantidad.textContent = producto.cantidad;
         fila.appendChild(celdaCantidad);
+
+         // Crear celda para el botón eliminar
+        let celdaEliminar = document.createElement('td');
+        let botonEliminar = document.createElement('button');
+        botonEliminar.textContent = 'X'; // Utiliza el texto 'X' para representar una cruz
+        botonEliminar.classList.add('btnEliminar');
+        botonEliminar.dataset.id = index; // Almacenar el índice del producto en el carrito como un atributo de datos
+        celdaEliminar.appendChild(botonEliminar);
+        fila.appendChild(celdaEliminar);
 
         contenedorProductos.appendChild(fila);
 
@@ -213,8 +222,17 @@ function actualizarCarrito() {
     celdaTotalPrecio.textContent = '$' + total;
     filaTotal.appendChild(celdaTotalPrecio);
 
-    contenedorProductos.appendChild(filaTotal);
+       contenedorProductos.appendChild(filaTotal);
 }
+
+// Agregar detector de eventos para los botones de eliminar
+document.querySelector('#lista-carrito tbody').addEventListener('click', function(e) {
+    if (e.target && e.target.classList.contains('btnEliminar')) {
+        const index = e.target.dataset.id; // recuperar el indice del producto a eliminar del atributo de datos
+        carrito.splice(index, 1); // eliminar el producto del carrito
+        actualizarCarrito(); 
+    }
+});
 
 // vaciar carrito
 
